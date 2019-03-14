@@ -1,0 +1,72 @@
+.adviser {
+	box-shadow: 0 2px 10px #ccc;
+	border-radius: 5px;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: 90px auto 0;
+}
+
+.adviser .adviser-cover {
+	position: relative;
+	width: 220px;
+	height: 220px;
+}
+
+.adviser .adviser-cover > img {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	width: 100%;
+	border-radius: 5px;
+}
+
+.adviser .adviser-details {
+	width: calc(100% - 200px);
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.adviser .adviser-name {
+	font-size: 23px;
+	margin-bottom: 10px;
+}
+
+.adviser p {
+	margin-bottom: 10px;
+}
+
+.adviser .adviser-price {
+	margin-bottom: 10px;
+}
+
+.adviser-button {
+	text-align: right;
+}
+
+@media screen and (max-width: 990px) {
+	.adviser {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.adviser .adviser-cover {
+		margin-bottom: 20px
+	}
+
+	.adviser .adviser-details {
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.adviser .adviser-price {
+		margin-bottom: 20px;
+	}
+}

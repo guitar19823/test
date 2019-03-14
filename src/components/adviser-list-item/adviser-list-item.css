@@ -1,0 +1,97 @@
+.adviser-list-item {
+	margin-bottom: 30px;
+	box-shadow: 0 2px 10px #ccc;
+	border-radius: 5px;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.adviser-list-item:hover {
+	box-shadow: 0 3px 20px #ccc;
+}
+
+.adviser-list-item .adviser-cover {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	
+}
+
+.adviser-list-item .adviser-cover > img {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 5%;
+	width: 100%;
+}
+
+.adviser-list-item .adviser-details {
+	width: calc(100% - 180px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.adviser-list-item .adviser-details > div:first-child {
+	width: 33%;
+}
+
+.adviser-list-item .adviser-name {
+	font-size: 23px;
+	margin-bottom: 10px;
+}
+
+.adviser-list-item .adviser-industries,
+.adviser-list-item .adviser-career_levels,
+.adviser-list-item .adviser-country {
+	margin-bottom: 10px;
+}
+
+.adviser-list-item .adviser-price {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.adviser-list-item .adviser-price > b {
+	margin-bottom: 10px;
+}
+
+.adviser-list-item .adviser-price > span {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF3E41FF;
+}
+
+@media screen and (max-width: 990px) {
+	.adviser-list-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.adviser-list-item .adviser-cover {
+		margin-bottom: 20px
+	}
+
+	.adviser-list-item .adviser-details {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.adviser-list-item .adviser-price {
+		margin-bottom: 20px;
+	}
+
+	.adviser-list-item .adviser-details > div:first-child {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}

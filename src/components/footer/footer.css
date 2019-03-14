@@ -1,0 +1,24 @@
+footer {
+	background: #5B7790FF
+}
+
+footer > ul {
+	padding: 30px 5%;
+	list-style: none;
+}
+
+footer > ul > li {
+	margin-bottom: 10px;
+}
+
+footer > ul > li > a:hover {
+	text-decoration: underline;
+	color: #ccc;
+}
+
+footer > .copy {
+	color: #eee;
+	background: #122;
+	padding: 20px 5%;
+	text-align: right;
+}

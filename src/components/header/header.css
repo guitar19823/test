@@ -1,0 +1,20 @@
+.header {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #232938FF;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 5%;
+  height: 60px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+}
